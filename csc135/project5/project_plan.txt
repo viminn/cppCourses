@@ -1,0 +1,104 @@
+Assignment: Project 5
+
+1.Program will read a file and use the data to output bills for each table in the file.
+
+2.Program collects the number of seats and the price per seat
+    from the file.
+Outputs the table number, subtotal, tax, tip, and total
+    on a bill.
+Subtotal = subtotal + seatprice to collect total of a table
+    tax = subtotal * 0.07 to get tax of the table
+    tip = subtotal * .2 or .25 depending on the number of people
+No constraints
+Assume the file data is formatted correctly, file is in the
+    directory and user will type the filename correctly
+
+3.Program will take in the user's input of filename and try to open
+    the file. If it fails an error is printed and program exits.
+    File is read for each table the seats and subtotal is taken.
+    The rest of the bill is calculated and passed into a function
+        to print the bill.
+
+4.Write several test files with different values.
+    Many tables, no tables, an empty table (test[1 through 5].txt
+
+
+$ cat test3.txt
+0
+
+$ ./a.out
+Enter the name of the file: test3.txt
+
+Table 1:
+Subtotal: $0.00
+Tax: $0.00
+Tip: $0.00
+Total: $0.00
+
+$ cat test4.txt
+$ ./a.out
+Enter the name of the file: test4.txt
+$
+
+$ cat test2.txt
+3
+10 20 15
+4
+7.99 8.25 10.00 9.99
+1
+25.00
+3
+10 20 15
+4
+7.99 8.25 10.00 9.99
+1
+25.00
+$ ./a.out
+Enter the name of the file: test2.txt
+
+Table 1:
+Subtotal: $45.00
+Tax: $3.15
+Tip: $9.00
+Total: $57.15
+
+Table 2:
+Subtotal: $36.23
+Tax: $2.54
+Tip: $7.25
+Total: $46.01
+
+Table 3:
+Subtotal: $25.00
+Tax: $1.75
+Tip: $5.00
+Total: $31.75
+
+Table 4:
+Subtotal: $45.00
+Tax: $3.15
+Tip: $9.00
+Total: $57.15
+
+Table 5:
+Subtotal: $36.23
+Tax: $2.54
+Tip: $7.25
+Total: $46.01
+
+Table 6:
+Subtotal: $25.00
+Tax: $1.75
+Tip: $5.00
+Total: $31.75
+
+$ ./a.out
+Enter the name of the file: fail
+Error: File could not be opened.
+
+
+5.Documentation - 1 day
+  Planning - 1 day
+  Write program - 2 days
+  Testing - 0.5 days
+  Total - 4.5 days
